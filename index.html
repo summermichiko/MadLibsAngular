@@ -1,25 +1,53 @@
 <!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Mad Libs with Angular</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
-</head>
-<body>
-	<header>
-		<div id="first-img" class="header-img">
-			<img src="images/madlibssmileyface.png">
-		</div>
-		<div id="second-img" class="header-img">
-			<img src="images/madlibslogo.png">
-		</div>
-	</header>
-	<h1>Please provide the following words:</h1>
-	<p>{{female name}} was a {{job title}} who loved technology. Although she loved parts of her job, she absolutely hated  {{tedious task}} and {{dirty task}}. So, {{female name}} met with her life mentor {{celebrity}} who told her to learn how to {{useless skill}} with Thinkful. Thinkful didn't offer a course on {{useless skill}} so she studied programming instead.</p>
- 
-	<p>What a great decision! With her new skills, {{female name}} built a(n) {{adjective}} robot named {{obnoxiuous celbertity}} that not only loved {{dirty task}} but did it {{huge number}} faster.</p>
-
-	
-	<script type="text/javascript" src="app.js"></script>
-</body>
+<html lang="en" ng-app="">
+  <head>
+    <title>MADLibs</title>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="container" >
+      <!-- header -->
+      <header>
+        <div class="smile">
+          <img src="images/madlibssmileyface.png" alt="">
+        </div>
+        <div class="logo">
+          <img src="images/madlibslogo.png" alt="">
+          <h1>Automate This!</h1>
+        </div>
+      </header>
+      <!-- words / input-->
+      <div class="words">
+        <h3>Provide the following words:</h3>
+        <div class="inputs">
+          <input type="text" placeholder="Female Name" ng-model="femalename" ng-init="femalename='female name'">
+          <input type="text" placeholder="Dirty Task" ng-model="dirtytask" ng-init="dirtytask='dirty task'">
+          <input type="text" placeholder="obnoxiuous celebrity" ng-model="obnoxiuouscelebrity" ng-init="obnoxiuouscelebrity='obnoxiuous celebrity'">
+        </div>
+        <div class="inputs">
+          <input type="text" placeholder="Job Title" ng-model="jobtitle" ng-init="jobtitle='job title'">
+          <input type="text" placeholder="Celebrity" ng-model="celebrity" ng-init="celebrity='celebrity'">
+          <input type="text" placeholder="Huge Number" ng-model="hugenumber" ng-init="hugenumber=' huge number'">
+        </div>
+        <div class="inputs">
+          <input type="text" placeholder="Tedious Task" ng-model="tedioustask" ng-init="tedioustask='tedious task'">
+          <input type="text" placeholder="Useless Skill" ng-model="uselessskill" ng-init="uselessskill='useless skill'">
+          <input type="text" placeholder="Adjective" ng-model="adjective" ng-init="adjective='adjective'"> 
+        </div>
+      </div>
+      <!-- content -->
+      <div class="content">
+        <p><span>{{femalename}}</span> was a <span>{{jobtitle}}</span> who loved technology. Although she loved parts of her job, she absolutely hated  <span>{{tedioustask}}</span> and <span>{{dirtytask}}</span>. So, <span>{{femalename}}</span> met with her life mentor <span>{{celebrity}}</span> who told her to learn how to <span>{{uselessskill}}</span> with Thinkful. Thinkful didn't offer a course on <span>{{uselessskill}}</span> so she studied programming instead. 
+        <br><br>
+        What a great decision! With her new skills, <span>{{femalename}}</span> built a(n) <span>{{adjective}}</span> robot named <span>{{obnoxiuouscelebrity}}</span> that not only loved <span>{{dirtytask}}</span> but did it <span>{{hugenumber}}</span> times faster. 
+        </p>
+      </div>
+    </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular.min.js"></script>
+  </body>
 </html>
+
+
+
+

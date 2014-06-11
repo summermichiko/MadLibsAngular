@@ -42,40 +42,98 @@ table {
 	border-spacing: 0;
 }
 
-body {
-	width: 960px;
-	margin-right: auto;
-	margin-left: auto;
+body{
+  font-family: 'Varela Round', sans-serif;
+}
+/* Container
+================================= */
+
+.container{
+  margin: 50px auto 40px;
+  width: 900px;
+  height: 800px;
+  border: 1px solid #777;
 }
 
-header {
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+/* Header 
+================================= */
+header{
+  padding:0;
+  height: 180px;
+  box-shadow: 0 2px 0 -1px #777;
 }
-
-.header-img {
-	display: inline-block;
+.smile, .logo{
+  display: inline-block;
 }
-
-.header-img img {
-	float: left;
-	margin-bottom: 30px;
-	margin-top: 30px;
+.smile{
+  width:250px;
+  height: 100%;
+  margin:0;
+  box-shadow: 2px 0 0 -1px #777;
+  text-align: center;
 }
-
-#first-img img {
-	width: 130px;
+.smile > img{
+  margin-top: 15px;
+  width:150px;
 }
-
+.logo{
+  width:630px; /* 900 - 250  */
+  text-align: center;
+  padding-top:20px;
+  margin-top:0;
+  vertical-align: top;
+}
+.logo > img{
+  margin-top:0;
+  width:280px;
+}
 h1 {
-	font-size: 30px;
-	margin-bottom: 30px;
+  font-size: 55px;
+  margin:auto;
+  margin-bottom:20px;
 }
 
-p {
-	font-size: 20px;
-	line-height: 2;
+/* Words / Input
+================================= */
+.words{
+  box-shadow: 0 2px 0 -1px #777;
+  padding-bottom: 15px;
+}
+h3{
+  font-size: 30px;
+  margin-left:30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.inputs{
+  margin-left:55px;
+}
+input{
+  width: 200px;
+  height: 30px;
+  outline: 0;
+  font-size: 18px;
+  margin: 5px 0px 25px 35px;
+  border-radius: 3px;
+  border: 2px solid #777;
+  display:inline-block;
+  color: #959595;
+}
+
+/* Content
+================================= */
+.content{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+p{
+  margin: 30px;
+  font-size: 25px;
+  word-spacing: 5px;
+}
+span{
+  color: #959595;
+  text-decoration: underline;
 }
 
 
