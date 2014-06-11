@@ -22,29 +22,30 @@
         <h3>Provide the following words:</h3>
         <div class="inputs">
           <input type="text" placeholder="female name" ng-model="femalename" ng-init="femalename='female name'">
-          <input type="text" placeholder="dirty task" ng-model="dirtytask" ng-init="dirtytask='dirty task'">
-          <input type="text" placeholder="obnoxiuous celebrity" ng-model="obnoxiuouscelebrity" ng-init="obnoxiuouscelebrity='obnoxiuous celebrity'">
-        </div>
-        <div class="inputs">
           <input type="text" placeholder="job title" ng-model="jobtitle" ng-init="jobtitle='job title'">
-          <input type="text" placeholder="telebrity" ng-model="celebrity" ng-init="celebrity='celebrity'">
-          <input type="text" placeholder="huge number" ng-model="hugenumber" ng-init="hugenumber=' huge number'">
+          <input type="text" placeholder="tedious task" ng-model="tedioustask" ng-init="tedioustask='tedious task'">
         </div>
         <div class="inputs">
-          <input type="text" placeholder="tedious task" ng-model="tedioustask" ng-init="tedioustask='tedious task'">
+          <input type="text" placeholder="dirtytask" ng-model="dirtytask" ng-init="dirtytask='dirty task'">
+          <input type="text" placeholder="celebrity" ng-model="celebrity" ng-init="celebrity='celebrity'">
           <input type="text" placeholder="useless skill" ng-model="uselessskill" ng-init="uselessskill='useless skill'">
-          <input type="text" placeholder="adjective" ng-model="adjective" ng-init="adjective='adjective'"> 
+        </div>
+        <div class="inputs">
+          <input type="text" placeholder="adjective" ng-model="adjective" ng-init="adjective='adjective'">
+          <input type="text" placeholder="obnoxious celebrity" ng-model="obnoxiouscelebrity" ng-init="obnoxiouscelebrity='obnoxious celebrity'">
+          <input type="text" placeholder="huge number" ng-model="hugenumber" ng-init="hugenumber='huge number'"> 
         </div>
       </div>
       <!-- content -->
       <div class="content">
         <p><span>{{femalename}}</span> was a <span>{{jobtitle}}</span> who loved technology. Although she loved parts of her job, she absolutely hated  <span>{{tedioustask}}</span> and <span>{{dirtytask}}</span>. So, <span>{{femalename}}</span> met with her life mentor <span>{{celebrity}}</span> who told her to learn how to <span>{{uselessskill}}</span> with Thinkful. Thinkful didn't offer a course on <span>{{uselessskill}}</span> so she studied programming instead. 
         <br><br>
-        What a great decision! With her new skills, <span>{{femalename}}</span> built a(n) <span>{{adjective}}</span> robot named <span>{{obnoxiuouscelebrity}}</span> that not only loved <span>{{dirtytask}}</span> but did it <span>{{hugenumber}}</span> times faster. 
+        What a great decision! With her new skills, <span>{{femalename}}</span> built a(n) <span>{{adjective}}</span> robot named <span>{{obnoxiouscelebrity}}</span> that not only loved <span>{{dirtytask}}</span> but did it <span>{{hugenumber}}</span> times faster. 
         </p>
       </div>
     </div>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular.min.js">
+    </script>
   </body>
 </html>
 

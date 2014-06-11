@@ -62,9 +62,11 @@ header{
   height: 180px;
   box-shadow: 0 3px 0 -1px #777;
 }
+
 .smile, .logo{
   display: inline-block;
 }
+
 .smile{
   width:250px;
   height: 100%;
@@ -72,6 +74,7 @@ header{
   box-shadow: 3px 0 0 -1px #777;
   text-align: center;
 }
+
 .smile > img{
   margin-top: 15px;
   width:150px;
@@ -90,7 +93,6 @@ header{
 h1 {
   font-size: 55px;
   margin:auto;
-  margin-bottom:20px;
 }
 
 /* Words / Input
@@ -101,7 +103,7 @@ h1 {
 }
 h3{
   font-size: 30px;
-  margin-left:30px;
+  margin-left:60px;
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -133,7 +135,7 @@ p{
   word-spacing: 5px;
 }
 span{
-  color: #959595;
+  color: red;
   text-decoration: underline;
 }
 
