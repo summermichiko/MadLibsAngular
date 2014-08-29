@@ -52,7 +52,7 @@ body{
 .container{
   margin: 50px auto 40px;
   width: 900px;
-  height: 865px;
+  height: 825px;
   background-color: #FFF;
 }
 
@@ -65,8 +65,7 @@ e8ac2f - mustard
 e3e2e2 - light grey*/
 
 header{
-  padding:0;
-  height: 180px;
+  height: 160px;
 }
 
 h1 {
@@ -80,7 +79,6 @@ h1 {
 h3{
   font-size: 25px;
   margin-left: 60px;
-  margin-top: 10px;
   margin-bottom: 35px;
   color: #e75f48;
   font-family: Paytone One;
@@ -126,7 +124,6 @@ p{
 
 span{
   color: #e75f48;
-  text-decoration: underline;
 }
 
 
