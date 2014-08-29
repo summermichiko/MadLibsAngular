@@ -2,42 +2,38 @@
 <html lang="en" ng-app="">
   <head>
     <title>MADLibs App</title>
-    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Paytone+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
     <div class="container" >
       <!-- header -->
       <header>
-        <div class="smile">
-          <img src="images/madlibssmileyface.png" alt="">
-        </div>
-        <div class="logo">
-          <img src="images/madlibslogo.png" alt="">
-          <h1>Automate This!</h1>
+        <div>
+          <h1>MadLibs</h1>
         </div>
       </header>
       <!-- words / input-->
-      <div class="words">
-        <h3>Provide the following words:</h3>
-        <div class="inputs">
-          <input type="text" placeholder="female name" ng-model="femalename" ng-init="femalename='female name'">
-          <input type="text" placeholder="job title" ng-model="jobtitle" ng-init="jobtitle='job title'">
-          <input type="text" placeholder="tedious task" ng-model="tedioustask" ng-init="tedioustask='tedious task'">
-        </div>
-        <div class="inputs">
-          <input type="text" placeholder="dirtytask" ng-model="dirtytask" ng-init="dirtytask='dirty task'">
-          <input type="text" placeholder="celebrity" ng-model="celebrity" ng-init="celebrity='celebrity'">
-          <input type="text" placeholder="useless skill" ng-model="uselessskill" ng-init="uselessskill='useless skill'">
-        </div>
-        <div class="inputs">
-          <input type="text" placeholder="adjective" ng-model="adjective" ng-init="adjective='adjective'">
-          <input type="text" placeholder="obnoxious celebrity" ng-model="obnoxiouscelebrity" ng-init="obnoxiouscelebrity='obnoxious celebrity'">
-          <input type="text" placeholder="huge number" ng-model="hugenumber" ng-init="hugenumber='huge number'"> 
-        </div>
+      <h3 class="top">Provide the following words:</h3>
+      <div class="inputs">
+        <input type="text" placeholder="female name" ng-model="femalename" ng-init="femalename='female name'">
+        <input type="text" placeholder="job title" ng-model="jobtitle" ng-init="jobtitle='job title'">
+        <input type="text" placeholder="tedious task" ng-model="tedioustask" ng-init="tedioustask='tedious task'">
+      </div>
+      <div class="inputs">
+        <input type="text" placeholder="dirtytask" ng-model="dirtytask" ng-init="dirtytask='dirty task'">
+        <input type="text" placeholder="celebrity" ng-model="celebrity" ng-init="celebrity='celebrity'">
+        <input type="text" placeholder="useless skill" ng-model="uselessskill" ng-init="uselessskill='useless skill'">
+      </div>
+      <div class="inputs">
+        <input type="text" placeholder="adjective" ng-model="adjective" ng-init="adjective='adjective'">
+        <input type="text" placeholder="obnoxious celebrity" ng-model="obnoxiouscelebrity" ng-init="obnoxiouscelebrity='obnoxious celebrity'">
+        <input type="text" placeholder="huge number" ng-model="hugenumber" ng-init="hugenumber='huge number'"> 
       </div>
       <!-- content -->
       <div class="content">
+      <h3>Your story:</h3>
         <p><span>{{femalename}}</span> was a <span>{{jobtitle}}</span> who loved technology. Although she loved parts of her job, she absolutely hated  <span>{{tedioustask}}</span> and <span>{{dirtytask}}</span>. So, <span>{{femalename}}</span> met with her life mentor <span>{{celebrity}}</span> who told her to learn how to <span>{{uselessskill}}</span> with Thinkful. Thinkful didn't offer a course on <span>{{uselessskill}}</span> so she studied programming instead. 
         <br><br>
         What a great decision! With her new skills, <span>{{femalename}}</span> built a(n) <span>{{adjective}}</span> robot named <span>{{obnoxiouscelebrity}}</span> that not only loved <span>{{dirtytask}}</span> but did it <span>{{hugenumber}}</span> times faster. 
